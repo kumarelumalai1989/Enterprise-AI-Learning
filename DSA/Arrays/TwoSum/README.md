@@ -24,10 +24,6 @@ Total : O(n^2)
 O(1)
 No extra data structures are used.
 
-## Advantages
-
-## Disadvantages
-
 ## Can it be optimized?
 Yes. We can optimize the solution using a HashMap (Python dictionary) to reduce the time complexity from O(n²) to O(n).
 
@@ -54,21 +50,21 @@ This avoids searching the array repeatedly and reduces the time complexity from 
 
 ## Real-world Learning
 ### Question 1: Why did you use range(len(nums)) instead of for number in nums
-Ans: 
+Answer: 
 1. Because we need an indices, not just the values.
 2. for number in nums gives only values.
 3. range(len(nums)) only gives the index. access the value using (nums[i])
 4. In Python, enumerate(nums) is preferred because it directly provides both the index and the value.
 
 ### Question 2: Why does the inner loop start from i + 1?
-Ans:
+Answer:
 To avoid:
 * Compring an element with itself.
 * Checking the same pair twice.
 * without i+1, we would compare (1,2) and later (2,1) which is redundant.
 
 ### Question 3: Why did you write return [] instead of return None?
-Ans:
+Answer:
 * Because the function's return type is expected to be List[int] returning [] means
 "No valid indices were found"
 * Returning "None" would require every caller to explicitly check for None, and it no longer matches the expected return type. 
