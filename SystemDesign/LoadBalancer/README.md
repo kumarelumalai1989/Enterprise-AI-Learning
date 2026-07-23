@@ -30,6 +30,25 @@ If user request incrasing more then we will add more servers to the load balance
 
 - Layer 4(Transport Layer)
 - Layer 7
+### Layer 4:
+* When the user connects, the load balancer only knows
+```
+Source IP        : 192.168.1.10
+Destination IP   : 20.10.15.40
+Protocol         : TCP
+Destination Port : 443
+``` 
+* It doesn't know:
+It doesn't know:
+❌ /chat
+❌ /upload
+❌ /search
+❌ HTTP Headers
+❌ Cookies
+❌ JWT Token
+
+It only knows:
+"Someone wants to connect to port 443."
 
 ## Algorithms
 
