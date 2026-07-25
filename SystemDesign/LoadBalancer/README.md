@@ -196,19 +196,19 @@ GET /health
 ----------------------------------------
 
 ### When would you choose Layer 4?
-  When every backend server runs the same application.
+* When every backend server runs the same application.
 ----------------------------------------
 
 ### When would you choose Layer 7?
-  When routing decisions depend on URLs, headers, cookies, or HTTP methods.
+* When routing decisions depend on URLs, headers, cookies, or HTTP methods.
 ----------------------------------------
 
 ### Why is Layer 4 faster?
-  Because it works at the TCP/UDP level and doesn't inspect HTTP requests.
+* Because it works at the TCP/UDP level and doesn't inspect HTTP requests.
 ----------------------------------------
 
 ### Why don't we use Layer 7 everywhere?
-  Although Layer 7 provides intelligent routing, it performs additional processing by inspecting HTTP requests. If all backend servers are identical and only TCP/UDP distribution traffic is required, Layer 4 is simpler, faster, and better enough.
+* Although Layer 7 provides intelligent routing, it performs additional processing by inspecting HTTP requests. If all backend servers are identical and only TCP/UDP distribution traffic is required, Layer 4 is simpler, faster, and better enough.
 -----------------------------------------
 
 ### Why is a Health Check important?
