@@ -190,25 +190,25 @@ GET /health
 ## Interview Questions
 
 ### Why not use one large server?
-Although vertical scaling is simple, it has hardware limits and creates a single point of failure.
+  * Although vertical scaling is simple, it has hardware limits and creates a single point of failure.
 
-Horizontal scaling with a Load Balancer provides better scalability, fault tolerance, and availability.
+  * Horizontal scaling with a Load Balancer provides better scalability, fault tolerance, and availability.
 ----------------------------------------
 
 ### When would you choose Layer 4?
-When every backend server runs the same application.
+  When every backend server runs the same application.
 ----------------------------------------
 
 ### When would you choose Layer 7?
-When routing decisions depend on URLs, headers, cookies, or HTTP methods.
+  When routing decisions depend on URLs, headers, cookies, or HTTP methods.
 ----------------------------------------
 
 ### Why is Layer 4 faster?
-Because it works at the TCP/UDP level and doesn't inspect HTTP requests.
+  Because it works at the TCP/UDP level and doesn't inspect HTTP requests.
 ----------------------------------------
 
 ### Why don't we use Layer 7 everywhere?
-Although Layer 7 provides intelligent routing, it performs additional processing by inspecting HTTP requests. If all backend servers are identical and only TCP/UDP distribution traffic is required, Layer 4 is simpler, faster, and better enough.
+  Although Layer 7 provides intelligent routing, it performs additional processing by inspecting HTTP requests. If all backend servers are identical and only TCP/UDP distribution traffic is required, Layer 4 is simpler, faster, and better enough.
 -----------------------------------------
 
 ### Why is a Health Check important?
