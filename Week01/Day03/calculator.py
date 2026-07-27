@@ -38,7 +38,7 @@ def calculate():
             break
         elif choice in ['1', '2', '3', '4']:
             try:
-                 number1  = float(input("Enter first number:"))
+                 number1 = float(input("Enter first number:"))
                  number2 = float(input("Enter second number:"))
             except ValueError:
                 print("Invalid input. Please enter numberic values.")
